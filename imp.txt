@@ -1,0 +1,1 @@
+.custom-swiper .servicegallery-text, .custom-swiper .servicegallery-textlast
