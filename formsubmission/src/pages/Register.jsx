@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
 const Register = () => {
   const navigate = useNavigate();
+  const handleGoToDashboard = () => {
+  navigate("/dashboard");
+}; 
 
   const [formData, setFormData] = useState({
     name: "",
@@ -67,6 +71,13 @@ const Register = () => {
         <button className="bg-blue-500 text-white w-full p-2">
           Submit
         </button>
+        <button
+          type="button"
+             onClick={handleGoToDashboard}
+              className="bg-green-500 text-white w-full p-2 mt-2"
+                  >
+                  Go to Dashboard
+                </button>
       </form>
     </div>
   );
